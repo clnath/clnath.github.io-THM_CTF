@@ -5,6 +5,11 @@ xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
 xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
+<meta property="og:title" content="Blaster" />
+<meta property="og:description" content="TryHackMe writeups, walkthroughs, and key takeaways from my CTF journey." />
+<meta property="og:image" content="https://clnath.github.io/clnath.github.io-THM_CTF/Bluster/Blaster_files/banner.png" />
+<meta property="og:url" content="https://clnath.github.io/" />
+<meta property="og:type" content="website" />
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
 <meta name=ProgId content=Word.Document>
 <meta name=Generator content="Microsoft Word 15">
@@ -1045,7 +1050,7 @@ style='font-size:14.0pt;line-height:107%'><o:p></o:p></span></b></p>
 
 <p class=MsoNormal><b><span style='font-size:14.0pt;line-height:107%'>Step 4:
 Visit the page of that hidden directory, seems like that this is a blog post and
-we found a user named ‘wade’ is posting some posts here.<o:p></o:p></span></b></p>
+we found a user named Â‘wadeÂ’ is posting some posts here.<o:p></o:p></span></b></p>
 
 <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
 style='font-size:14.0pt;line-height:107%;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
@@ -1066,7 +1071,7 @@ style='font-size:14.0pt;line-height:107%'><o:p></o:p></span></b></p>
 
 <p class=MsoNormal><b><span style='font-size:14.0pt;line-height:107%'>Step 5:
 There is also a note was written in a comment of his post mentioned the
-password for his user. <span style='mso-spacerun:yes'> </span>Ans <span
+password for his user. <span style='mso-spacerun:yes'>Â </span>Ans <span
 class=GramE>is :</span> <span class=SpellE>parzival</span><o:p></o:p></span></b></p>
 
 <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
@@ -1172,7 +1177,7 @@ style='font-size:14.0pt;line-height:107%'><o:p></o:p></span></b></p>
 
 <p class=MsoNormal><b><span style='font-size:14.0pt;line-height:107%'>Step 8:
 We found an .exe file on the desktop named <span class=SpellE>hhupd</span>. This
-is the file <span class=SpellE>usere</span> didn’t clean up.<o:p></o:p></span></b></p>
+is the file <span class=SpellE>usere</span> didnÂ’t clean up.<o:p></o:p></span></b></p>
 
 <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
 style='font-size:14.0pt;line-height:107%;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
@@ -1193,7 +1198,7 @@ style='font-size:14.0pt;line-height:107%'><o:p></o:p></span></b></p>
 
 <p class=MsoNormal><b><span style='font-size:14.0pt;line-height:107%'>Step 9:
 We have a user access but its <span class=GramE>not<span
-style='mso-spacerun:yes'>  </span>a</span> privileged user, so we need to privileged
+style='mso-spacerun:yes'>Â  </span>a</span> privileged user, so we need to privileged
 explication for getting the root/Administrator access. After research on the <span
 class=GramE>CVE</span> we get before, we <span class=SpellE>founf</span> that
 this is a windows 10 based Certificate Dialog Elevation of Privilege
@@ -1225,7 +1230,7 @@ style='font-size:14.0pt;line-height:107%'><o:p></o:p></span></b></p>
 
 <p class=MsoNormal><b><span style='font-size:14.0pt;line-height:107%'>Step 11:
 Click on the show more link and found a certificate. Click on the link of show
-information about the publisher’s certificate.<o:p></o:p></span></b></p>
+information about the publisherÂ’s certificate.<o:p></o:p></span></b></p>
 
 <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
 style='font-size:14.0pt;line-height:107%;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
@@ -1258,8 +1263,8 @@ style='font-size:14.0pt;line-height:107%'><o:p></o:p></span></b></p>
 
 <p class=MsoNormal><b><span style='font-size:14.0pt;line-height:107%'>Step 13:
 It will open the browser and the next step is to click on save file as <span
-class=GramE>then <span style='mso-spacerun:yes'> </span>you</span> got an error
-with ‘location not available’. <o:p></o:p></span></b></p>
+class=GramE>then <span style='mso-spacerun:yes'>Â </span>you</span> got an error
+with Â‘location not availableÂ’. <o:p></o:p></span></b></p>
 
 <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
 style='font-size:14.0pt;line-height:107%;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
@@ -1293,8 +1298,8 @@ style='font-size:14.0pt;line-height:107%'><o:p></o:p></span></b></p>
 
 <p class=MsoNormal><b><span style='font-size:14.0pt;line-height:107%'>Step 15:
 Now we get a command promote with admirative privileged. To check this just
-write “<span class=SpellE>whoami</span>” and get the result as “<span
-class=SpellE>nt</span> authority\system”. Now navigated the mentioned location
+write Â“<span class=SpellE>whoami</span>Â” and get the result as Â“<span
+class=SpellE>nt</span> authority\systemÂ”. Now navigated the mentioned location
 and find the root.txt file for the next flag.<o:p></o:p></span></b></p>
 
 <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
@@ -1333,10 +1338,10 @@ style='font-size:14.0pt;line-height:107%'><o:p></o:p></span></b></p>
 
 <p class=MsoNormal><b><span style='font-size:14.0pt;line-height:107%'>Step 16: Now
 go to my attacker kali machine and run Metasploit framework (<span
-class=SpellE>msfconsole</span> -q). Then use this command “use </span></b><span
+class=SpellE>msfconsole</span> -q). Then use this command Â“use </span></b><span
 style='font-family:"Arial",sans-serif;color:#151C2B;background:white'>exploit/multi/script/<span
 class=SpellE>web_delivery</span></span></span><b><span style='font-size:14.0pt;
-line-height:107%'>” to use the mentioned exploit for this lab.<o:p></o:p></span></b></p>
+line-height:107%'>Â” to use the mentioned exploit for this lab.<o:p></o:p></span></b></p>
 
 <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
 style='font-size:14.0pt;line-height:107%;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
@@ -1359,7 +1364,7 @@ style='font-size:14.0pt;line-height:107%'><o:p></o:p></span></b></p>
 
 <p class=MsoNormal><b><span style='font-size:14.0pt;line-height:107%'>Step 17: While
 we checking the options for this <span class=GramE>exploit</span> we found that
-there is only one target available ‘python’, but in windows python was not pre-installed,
+there is only one target available Â‘pythonÂ’, but in windows python was not pre-installed,
 So we need to find how many targets are there and which should be more suitable
 for us.<o:p></o:p></span></b></p>
 
@@ -1438,7 +1443,7 @@ style='font-size:14.0pt;line-height:107%'><o:p></o:p></span></b></p>
 <p class=MsoNormal><b><span style='font-size:14.0pt;line-height:107%'><o:p>&nbsp;</o:p></span></b></p>
 
 <p class=MsoNormal><b><span style='font-size:14.0pt;line-height:107%'>Step 19:
-Now run the exploit “run -j” and get a <span class=SpellE>powershell</span>
+Now run the exploit Â“run -jÂ” and get a <span class=SpellE>powershell</span>
 command like this <o:p></o:p></span></b></p>
 
 <p class=MsoNormal><i><span style='color:red'>powershell.exe -<span
@@ -1505,7 +1510,7 @@ src="Blaster_files/image082.jpg" v:shapes="Picture_x0020_28"><![endif]></span></
 style='font-size:14.0pt;line-height:107%'><o:p></o:p></span></b></p>
 
 <p class=MsoNormal><b><span style='font-size:14.0pt;line-height:107%'>Step 22: After
-going through all the hard work of exploiting a system, it’s often a good idea
+going through all the hard work of exploiting a system, itÂ’s often a good idea
 to leave yourself an easier way back into the system for later use. This way,
 if the service you initially exploited is down or patched, you can still gain
 access to the system. Metasploit has a Meterpreter script,&nbsp;<span
@@ -1548,3 +1553,4 @@ style='font-size:14.0pt;line-height:107%'><o:p></o:p></span></b></p>
 </body>
 
 </html>
+
